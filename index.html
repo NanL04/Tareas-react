@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Postal</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Handlee', cursive; /* Cambio de fuente a Handlee */
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    .postcard {
+        width: 600px; /* Aumento el ancho para dar espacio a los elementos */
+        min-height: 300px; /* Incremento la altura mínima */
+        background-color: white;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px auto;
+        position: relative;
+    }
+    .postcard .content {
+        padding: 20px;
+        position: relative; /* Agregamos posición relativa para alinear el botón */
+    }
+    .postcard .left-side {
+        float: left; /* Alinear a la izquierda */
+        width: 50%; /* Ocupar la mitad del ancho */
+    }
+    .postcard .right-side {
+        float: right; /* Alinear a la derecha */
+        width: 50%; /* Ocupar la mitad del ancho */
+    }
+    .postcard .left-side p {
+        margin-bottom: 10px; /* Agregar espacio entre los párrafos */
+    }
+    .postcard .right-side p:first-child {
+        margin-top: 0; /* Eliminar el margen superior para el primer párrafo */
+    }
+    .postcard button {
+        display: block; /* Hacer que el botón sea un bloque */
+        width: 120px; /* Establecer un ancho más pequeño para el botón */
+        margin: 60px 0 0 auto; /* Ubicar el botón más abajo y centrado horizontalmente */
+        background-color: rgb(25, 25, 116); /* Color de fondo azul */
+        color: white; /* Color del texto blanco */
+        border: none; /* Sin borde */
+        padding: 10px; /* Añadir relleno */
+        border-radius: 5px; /* Borde redondeado */
+        cursor: pointer; /* Cursor de puntero */
+        font-family: 'Handlee', cursive; /* Cambiar la fuente del botón */
+    }
+</style>
+</head>
+<body>
+
+<div class="postcard">
+    <div class="content">
+        <h1 style="text-align:center;">Mi Postcard</h1>
+        <br> <!-- Agrego un salto de línea -->
+        <div class="left-side">
+            <p>Nombre</p>
+            <p>Email</p>
+            <p>Mensaje</p>
+        </div>
+        <div class="right-side">
+            <p>¡Grandioso! Creando mi primer postcard usando HTML5 y CSS durante el curso de multimedios!</p>
+            <p>¡Me parece increíble la actividad, ya quiero empezar a realizar más cosas!</p>
+            <br>
+            <br>
+        </div>
+        <button>Enviar</button> <!-- Agregar botón -->
+    </div>
+</div>
+
+</body>
+</html>
